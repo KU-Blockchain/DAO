@@ -18,19 +18,20 @@ We welcome any and all contributions to the KUBI project. If you're interested i
 
 3. [Join the DeWork](https://app.dework.xyz/kubi/kubi-dao/overview)
 4. Get to work on the assigned Dework tasks
-
+## Onboarding for DAO and Dework 
+IMPORTANT!
+[What is DAO and Dework and how to join and use KUBI's](https://docs.google.com/presentation/d/1xIJdkGCgmbaPu8Hjlk-5FJ-RIm-E3-oVs4SVCGwZeK0/edit#slide=id.g1aba998e073_0_109)
 ## Getting Started
 
 To get started with the KUBI project, you'll need to have a basic understanding of blockchain technology and smart contracts. If you're new to these concepts, we recommend starting with the following resources:
 
-- [Blockchain Basics: A Non-Technical Introduction in 25 Steps](https://www.blockchain-council.org/blockchain/blockchain-basics-a-non-technical-introduction-in-25-steps/)
+- [Intro to Blockchain](https://www.geeksforgeeks.org/blockchain-technology-introduction/)
 - [Introduction to Smart Contracts](https://blockgeeks.com/guides/smart-contracts/)
 
 To create a DAO, you will need to have a basic understanding of smart contract programming. There are many resources available online that can help you learn how to code a DAO, including the following:
 
-- [Introduction to DAOs](https://consensys.net/academy/blockchain-developer/ethereum-development/introduction-to-daos/)
-- [Building a DAO on Ethereum](https://blockgeeks.com/guides/building-a-dao-on-ethereum/)
-- [Creating a DAO in Solidity](https://solidity.readthedocs.io/en/v0.7.4/dao.html)
+- [Learn Solidity and Smart Contracts: Learnweb3](https://learnweb3.io) 
+- [Creating a DAO in Solidity](https://betterprogramming.pub/how-to-code-an-on-chain-dao-e525e13a57be)
 
 It's also a good idea to familiarize yourself with the tools and frameworks that are commonly used for developing smart contracts and DAOs, such as [Truffle](https://truffleframework.com/) and [OpenZeppelin](https://openzeppelin.org/).
 
