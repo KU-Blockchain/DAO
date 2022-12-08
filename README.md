@@ -16,7 +16,7 @@ We welcome any and all contributions to the KUBI project. If you're interested i
 2. Clone the repository to your local machine
 [How to use GitHub](https://guides.github.com/)
 
-3. [Join the DeWork](https://app.dework.xyz/kubi/kubi-dao/overview)
+3. [Join the DeWork](https://app.dework.xyz/i/0XyFMxp3dKTeHdB3fBoB67)
 4. Get to work on the assigned Dework tasks
 ## Onboarding for DAO and Dework 
 IMPORTANT!
