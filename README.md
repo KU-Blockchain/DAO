@@ -40,7 +40,7 @@ Once you have a basic understanding, you can begin exploring the code in this re
 
 ## Contact Us
 
-message us on github
+Message us on github or through our [discord!](https://discord.gg/nRY2FjJxr7)
 
 
 
