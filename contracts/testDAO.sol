@@ -1,6 +1,7 @@
 pragma solidity ^0.8.9;
 
-import "https://github.com/OpenZeppelin/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 
 // Specifies the version of Solidity, using semantic versioning.
@@ -69,10 +70,7 @@ event ProposalCreated(uint256 proposalId);
 event ProposalVoted(uint256 proposalId, bool approved);
 event FundsWithdrawn(address recipient, uint256 amount);
 
-constructor() public {
-    owner = msg.sender;
-    initialized = false;
-}
+
 
 function initialize(uint256 _quorum, uint256 _majority, uint256 _proposalReputation, uint256 _votingReputation, uint256 _proposalVotingPeriod, address _KUBIX_TOKEN_ADDRESS) public {
     require(!initialized, "Contract has already been initialized");
@@ -86,8 +84,8 @@ function initialize(uint256 _quorum, uint256 _majority, uint256 _proposalReputat
     KUBIX_TOKEN_ADDRESS = _KUBIX_TOKEN_ADDRESS;
 
     // Issue a new token on the Polygon network called KUBIX
-    SafeERC20 kubixToken = SafeERC20(KUBIX_TOKEN_ADDRESS);
-    kubixToken.issue("KUBIX", msg.sender, 1000000);
+    ERC20 KubixToken = ERC20(KUBIX_TOKEN_ADDRESS);
+    KubixToken.mint("KUBIX", msg.sender, 1000000);
 
     initialized = true;
 }
@@ -253,28 +251,18 @@ function initialize(uint256 _quorum, uint256 _majority, uint256 _proposalReputat
 }
 
     // ERC20 token contract to be used on the Polygon network
-contract ERC20KubixToken is SafeERC20 {
-    string public name = "Kubix Token";
-    string public symbol = "KUBX";
-    uint8 public decimals = 18;
-    uint256 public totalSupply;
+abstract contract KubixToken is ERC20 {
+    constructor() {
+        totalSupply += 1000;
+        balanceOf[msg.sender] += 1000;
+    }
 
-
-
-    mapping(address => uint256) public balanceOf;
 
     function mint(address _to, uint256 _value) public {
-        require(msg.sender == owner, "Only the contract owner can mint new tokens");
+        //require(msg.sender == owner, "Only the contract owner can mint new tokens");
         require(_value > 0, "Cannot mint 0 or less tokens");
         totalSupply += _value;
         balanceOf[_to] += _value;
     }
 
-    function transfer(address _to, uint256 _value) public {
-        require(balanceOf[msg.sender] >= _value, "Insufficient balance");
-        require(_value > 0, "Cannot transfer 0 or less tokens");
-
-        balanceOf[msg.sender] -= _value;
-        balanceOf[_to] += _value;
-    }
 }
