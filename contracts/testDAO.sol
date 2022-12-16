@@ -261,21 +261,20 @@ contract ERC20KubixToken is SafeERC20 {
 
 
 
-mapping(address => uint256) public balanceOf;
+    mapping(address => uint256) public balanceOf;
 
-function mint(address _to, uint256 _value) public {
-    require(msg.sender == owner, "Only the contract owner can mint new tokens");
-    require(_value > 0, "Cannot mint 0 or less tokens");
-    totalSupply += _value;
-    balanceOf[_to] += _value;
-}
+    function mint(address _to, uint256 _value) public {
+        require(msg.sender == owner, "Only the contract owner can mint new tokens");
+        require(_value > 0, "Cannot mint 0 or less tokens");
+        totalSupply += _value;
+        balanceOf[_to] += _value;
+    }
 
-function transfer(address _to, uint256 _value) public {
-    require(balanceOf[msg.sender] >= _value, "Insufficient balance");
-    require(_value > 0, "Cannot transfer 0 or less tokens");
+    function transfer(address _to, uint256 _value) public {
+        require(balanceOf[msg.sender] >= _value, "Insufficient balance");
+        require(_value > 0, "Cannot transfer 0 or less tokens");
 
-    balanceOf[msg.sender] -= _value;
-    balanceOf[_to] += _value;
-}
-
+        balanceOf[msg.sender] -= _value;
+        balanceOf[_to] += _value;
+    }
 }
