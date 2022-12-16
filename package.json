@@ -1,0 +1,22 @@
+{
+  "name": "dao",
+  "version": "1.0.0",
+  "description": "## Mission The KUBI DAO puts our Members at the Center of our Institute with Direct Democracy Voting on imporant issues through the KUBI1 token and rewards participation with KUBIX",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KU-Blockchain/DAO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KU-Blockchain/DAO/issues"
+  },
+  "homepage": "https://github.com/KU-Blockchain/DAO#readme",
+  "devDependencies": {
+    "hardhat": "^2.12.4"
+  }
+}
