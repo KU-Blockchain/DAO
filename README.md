@@ -17,7 +17,7 @@ We welcome any and all contributions to the KUBI project. If you're interested i
 [How to use GitHub](https://guides.github.com/)
 
 3. [Join the DeWork](https://app.dework.xyz/i/0XyFMxp3dKTeHdB3fBoB67)
-4. Get to work on the assigned Dework tasks
+4. Get to work on the assigned Dework tasks.
 ## Onboarding for DAO and Dework 
 IMPORTANT!
 [What is DAO and Dework and how to join and use KUBI's](https://docs.google.com/presentation/d/1xIJdkGCgmbaPu8Hjlk-5FJ-RIm-E3-oVs4SVCGwZeK0/edit#slide=id.g1aba998e073_0_109)
