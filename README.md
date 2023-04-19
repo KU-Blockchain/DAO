@@ -1,5 +1,7 @@
 # KUBI DAO and Dework
 
+Please note: This is an earlier version of the KUBI DAO, which is now out of date. Please reference the DAO2 repository for our current working version of the DAO.
+
 ## Mission
 The KUBI DAO puts our Members at the Center of our Institute with Direct Democracy Voting on imporant issues through the KUBI1 token and rewards participation with KUBIX
 
